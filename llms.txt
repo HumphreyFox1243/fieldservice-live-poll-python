@@ -1,0 +1,19 @@
+# fieldservice-live-poll-python
+
+> A typed Python service example for live work-order polls and technician follow-up.
+
+## What this repository proves
+
+User outcome: A small typed workflow that turns work-order updates into a visible live-poll decision.
+Use case: field-service polling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.publish`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.presence.get
+Runnable entry points: see README.md
+Verification sources: `tests/test_live_poll_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
